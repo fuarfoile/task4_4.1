@@ -8,6 +8,7 @@
 package com.boast.task4;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -33,9 +34,8 @@ class ArrayListEditor {
 
         for(int i = 0; i < list.size() - largerCount; i++) {
             if ((int) list.get(i) > value) {
-                list.add(list.get(i));
-                list.remove(i);
                 largerCount++;
+                Collections.swap(list, i, list.size() - largerCount);
                 i--;
             }
         }
