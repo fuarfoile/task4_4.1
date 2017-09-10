@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println(list);
 
-        System.out.print("Value = ");
+        System.out.print("Separate value = ");
         int value = in.nextInt();
 
         ArrayListEditor.separate(list, value);
